@@ -17,10 +17,15 @@ const expense = [
     amount: 578.48}
 ]
 
+const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense)
+}
+
 function App() {
     return (
         <Card>
-            <NewExpenses/>
+            <NewExpenses onAddExpense={addExpenseHandler} />
             <Expenses items={expense}/>
         </Card>
     )
