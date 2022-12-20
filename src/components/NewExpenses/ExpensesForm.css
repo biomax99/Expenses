@@ -51,3 +51,8 @@
 .new-expense__actions {
     text-align: right;
 }
+
+.new-expense__actions__form {
+    text-align: center;
+
+}
